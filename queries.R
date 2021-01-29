@@ -39,3 +39,4 @@ languageCountryDF %>%
   ggplot(aes( x = CountryCode, y=Percentage, fill = IsOfficial )) + 
   geom_bin2d() +
   coord_flip()
+dbDisconnect(MyDataBase)
